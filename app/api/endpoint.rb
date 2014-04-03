@@ -1,11 +1,8 @@
+require 'notes'
+
 module Endpoint
   class API < Grape::API
-    format :json
-
-    resource :notes do
-      get do
-        Note.all
-      end
-    end
+    mount Notes::APIv1
+    mount Notes::APIv2
   end
 end
