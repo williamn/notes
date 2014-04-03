@@ -1,4 +1,5 @@
-require 'notes'
+require 'v1/notes.rb'
+require 'v2/notes.rb'
 
 module Endpoint
   class API < Grape::API
