@@ -1,6 +1,16 @@
-# README
+# Notes
 
-Notes is an example of Grape app mounted on Rails with `:accept_version_header` versioning strategy.
+Notes is an example of Grape app mounted on Rails.
+
+## API documentation
+
+http://docs.notes32.apiary.io
+
+## Features
+
+### Versioning
+
+Notes using `:accept_version_header` versioning strategy.
 
     $ curl -H "Accept-Version:v1" htt://localhost:3000/notes
     
