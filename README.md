@@ -25,3 +25,31 @@ and
 will returns
 
     {"data":[{"id":1,"title":"Foo"},{"id":2,"title":"Bar"}]}
+
+### Error handling
+
+TBA
+
+### Pagination and partial response
+
+TBA
+
+### Multiple formats
+
+TBA
+
+### Handling exceptions
+
+TBA
+
+### Logging
+
+TBA
+
+### Authentication
+
+TBA
+
+### Testing
+
+TBA
