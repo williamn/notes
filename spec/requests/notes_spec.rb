@@ -6,9 +6,9 @@ describe Endpoint::API do
     @bar = create(:bar)
   end
 
-  describe "GET /notes" do
+  describe "GET /api/notes" do
     it "returns v1" do
-      get "/notes"
+      get "/api/notes", nil, { 'Accept-Version' => 'v1' }
       response.status.should == 200
       response.body.should == [
         {
@@ -23,7 +23,7 @@ describe Endpoint::API do
     end
 
     it "returns v2" do
-      get "/notes", nil, { 'Accept-Version' => 'v2' }
+      get "/api/notes"
       response.status.should == 200
       response.body.should == {
         data: [
