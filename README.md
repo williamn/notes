@@ -19,7 +19,15 @@ Clients should pass the desired version in HTTP `Accept-Version` header.
 
 ### Error handling
 
-TBA
+Notes uses conventional HTTP response codes to indicate success or failure of an API request.
+
+Attribute `message` is returned for giving more details about the error.
+
+  - 200 OK
+  - 400 Bad Request
+  - 401 Unauthorized
+  - 404 Not Found
+  - 500 Internal Server Error
 
 ### Pagination and partial response
 
