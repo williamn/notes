@@ -7,7 +7,7 @@ module Endpoint
     mount Notes::APIv1
 
     route :any, '*path' do
-      error!({ error: "The requested item doesn't exist"}, 404)
+      error!({ message: "The requested item doesn't exist" }, 404)
     end
   end
 end
