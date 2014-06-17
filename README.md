@@ -12,7 +12,7 @@ http://docs.notes32.apiary.io
 
 Notes using `:accept_version_header` versioning strategy.
 
-    $ curl -H "Accept-Version:v1" htt://localhost:3000/notes
+    $ curl -H "Accept-Version:v1" http://localhost:3000/notes
     
 will give you
 
@@ -20,7 +20,7 @@ will give you
 
 and
 
-    $ curl -H "Accept-Version:v2" htt://localhost:3000/notes
+    $ curl -H "Accept-Version:v2" http://localhost:3000/notes
 
 will returns
 
